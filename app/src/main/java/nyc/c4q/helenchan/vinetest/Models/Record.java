@@ -76,6 +76,15 @@ public class Record {
     @SerializedName("blocked")
     @Expose
     public int blocked;
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
     @SerializedName("username")
     @Expose
     public String username;
@@ -94,6 +103,12 @@ public class Record {
     @SerializedName("postId")
     @Expose
     public int postId;
+
+    public String getProfileBackground() {
+        return profileBackground;
+    }
+
+
     @SerializedName("profileBackground")
     @Expose
     public String profileBackground;

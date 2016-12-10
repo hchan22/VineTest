@@ -8,6 +8,8 @@ package nyc.c4q.helenchan.vinetest.Models;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
+import java.util.List;
+
 
 public class Data {
 
@@ -17,10 +19,19 @@ public class Data {
     @SerializedName("anchorStr")
     @Expose
     public String anchorStr;
+
+    public List<Record> getRecords() {
+        return records;
+    }
+
+    public void setRecords(List<Record> records) {
+        this.records = records;
+    }
+
     @SerializedName("records")
-//    @Expose
-//    public List<VineResponse.Record> records = null;
-//    @SerializedName("previousPage")
+    @Expose
+    public List<Record> records = null;
+    @SerializedName("previousPage")
     @Expose
     public Object previousPage;
     @SerializedName("backAnchor")
